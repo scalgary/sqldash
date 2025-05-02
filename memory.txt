@@ -1,0 +1,7 @@
+-- create folder
+-- set up git init
+-- virtual env python3 -m venv .env
+-- activate the environnement
+-- installation what is needed: upgrade pip, packages
+-- create gitignore 
+

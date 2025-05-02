@@ -172,3 +172,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+#MacOS
+.DS_Store
+
+#project
+AdventureWorks-for-Postgres/
