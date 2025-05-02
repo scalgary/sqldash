@@ -5,3 +5,16 @@
 -- installation what is needed: upgrade pip, packages
 -- create gitignore 
 
+brew uninstall postgresql  
+brew install postgresql
+brew services start postgresql
+psql -l
+dropdb -U passion adventureworks --if-exists
+createdb -U passion Adventureworks 
+cd AdventureWorks-for-Postgres
+psql -d Adventureworks < install.sql
+
+
+psql Adventureworks
+SELECT * FROM humanresources.employee LIMIT 10;
+
