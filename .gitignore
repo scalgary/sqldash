@@ -181,3 +181,4 @@ cython_debug/
 AdventureWorks-for-Postgres/
 *.png 
 AdventureWorks-for-Postgres-master.zip
+*.html

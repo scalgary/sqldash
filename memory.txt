@@ -20,4 +20,5 @@ SELECT * FROM humanresources.employee LIMIT 10;
 
 -- now that we have the db we can analyze the data
 
+git checkout -b feature/improve_graph
 
