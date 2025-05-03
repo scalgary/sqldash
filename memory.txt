@@ -22,3 +22,8 @@ SELECT * FROM humanresources.employee LIMIT 10;
 
 git checkout -b feature/improve_graph
 
+git branch -D feature/improve_graph 
+git push origin --delete feature/improve_graph
+
+-- dashboarding
+https://vizdata.org/slides/20/20-quarto-dashboards.html#/title-slide
