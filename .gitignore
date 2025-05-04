@@ -184,3 +184,4 @@ AdventureWorks-for-Postgres-master.zip
 *.html
 data/*
 dashing-through-snow_files/*
+sql_backup/*

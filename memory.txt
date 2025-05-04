@@ -27,3 +27,22 @@ git push origin --delete feature/improve_graph
 
 -- dashboarding
 https://vizdata.org/slides/20/20-quarto-dashboards.html#/title-slide
+
+docker ps -a
+docker stop
+docker rm
+docker images
+docker rmi
+chmod +x setup_sql_server.sh
+
+docker cp territory_sales.sql sql-dev:/var/opt/mssql/backup/territory_sales.sql
+
+docker exec -i sql-dev /opt/mssql-tools18/bin/sqlcmd \
+  -S localhost -U SA -P "<2Indians_1CowBoys>" -C \
+  -i /var/opt/mssql/backup/territory_sales.sql \
+  > territory_sales.txt
+
+
+  docker exec -i sql-dev /opt/mssql-tools18/bin/sqlcmd \
+  -S localhost -U SA -P "<2Indians_1CowBoys>" -C \
+  -Q "USE AdventureWorks2019; SELECT YEAR(ModifiedDate) AS Year, SUM(LineTotal) AS TotalLineAmount FROM Sales.SalesOrderDetail GROUP BY YEAR(ModifiedDate) ORDER BY Year;"
